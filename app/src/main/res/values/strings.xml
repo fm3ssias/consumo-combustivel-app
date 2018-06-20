@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Consumo Combustivel</string>
+
+    <!-- Main Activity -->
+    <string name="titulo">Descubra o consumo de \ncombustível do seu veículo!</string>
+    <string name="titulo_km">Kilometros rodados:</string>
+    <string name="editTxt_km">Km</string>
+    <string name="titulo_gas">Litros gastos:</string>
+    <string name="edtTxt_gas">L</string>
+    <string name="buttonCalcular">Calcular!</string>
+    <string name="buttonDicas">Como usar o app</string>
+    <string name="titulo_mediaConsumo">Média de consumo: </string>
+    <string name="x">X</string>
+    <string name="title_activity_how_to">HowToActivity</string>
+
+    <!-- How To Activity -->
+    <string name="passo_1">Quando você parar em um posto de combustível, zere
+    o odômetro parcial e peça para completar o tanque do seu carro.</string>
+
+    <string name="passo_2">Rode pelo menos 200 km, para ter uma boa média.</string>
+
+    <string name="passo_3">Quando você retornar ao posto, anote em uma caderneta
+    quantos quilômetros você percorreu e peça para encher o
+    tanque novamente.</string>
+
+    <string name="passo_4">Verifique na bomba, quantos litros entraram dentro do tanque do
+    seu carro.</string>
+
+    <string name="passo_5">Assim, você terá o percurso e a quantidade de litros gastos para
+    este percurso.</string>
+
+    <string name="passo_6">Divida o valor de percurso pelo valor de litros.</string>
+
+    <string name="passo_7">Resultado: valor do consumo de combustível do seu carro.</string>
+
+    <string name="imagemBackground">background</string>
+</resources>

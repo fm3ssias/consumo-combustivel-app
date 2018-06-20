@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtView_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/titulo_km"
+        app:layout_constraintStart_toEndOf="@+id/imageView_km"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_titulo" />
+
+    <EditText
+        android:id="@+id/editText_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/editTxt_km"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/txtView_km"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_km" />
+
+    <TextView
+        android:id="@+id/txtView_gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/titulo_gas"
+        app:layout_constraintStart_toEndOf="@+id/imageView_litros"
+        app:layout_constraintTop_toBottomOf="@+id/editText_km" />
+
+    <EditText
+        android:id="@+id/editText_gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edtTxt_gas"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/txtView_gas"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_gas" />
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="109dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="46dp"
+        android:background="#191970"
+        android:text="@string/buttonCalcular"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_gas" />
+
+    <TextView
+        android:id="@+id/txtView_mediaConsumo"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="42dp"
+        android:text="@string/titulo_mediaConsumo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtView_media"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_media"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/x"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtView_L"
+        app:layout_constraintStart_toEndOf="@+id/txtView_mediaConsumo" />
+
+    <TextView
+        android:id="@+id/txtView_L"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/edtTxt_gas"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtView_media" />
+
+    <Button
+        android:id="@+id/button_dicas"
+        android:layout_width="182dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:background="#228B22"
+        android:text="@string/buttonDicas"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_calcular"
+        app:layout_constraintStart_toStartOf="@+id/button_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/button_calcular" />
+
+    <ImageView
+        android:id="@+id/imageView_km"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/km_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_titulo" />
+
+    <ImageView
+        android:id="@+id/imageView_litros"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/gas_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_km" />
+</android.support.constraint.ConstraintLayout>
